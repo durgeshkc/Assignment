@@ -14,7 +14,7 @@ body {
 .container {
     display: flex;
     
-    background-color:rgb(228, 212, 212);
+    background-color:rgb(238, 221, 175);
     height: 50px;
     position: fixed;
     width: 100%;
@@ -50,7 +50,7 @@ nav {
     background-attachment:fixed;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size:contain;
 }
 .heroSection { 
     
@@ -178,6 +178,7 @@ nav {
 .other1 {
     display: flex;
     margin: 5px;
+    /* flex-direction: column; */
     border: 0.2px solid rgb(218, 198, 198);
 }
 /* .other2 {
@@ -190,10 +191,12 @@ nav {
 }
 footer {
     margin:0;
-    background-color: rgb(220, 223, 231);
+    /* background-color: rgb(220, 223, 231); */
+    background-color:rgb(224, 238, 220);
 }
 footer h2 {
-    background-color: rgb(186, 218, 218);
+    /* background-color: rgb(186, 218, 218); */
+    background-color: rgb(107, 218, 140);
     margin-top: 0;
     text-align: center;
 }
@@ -201,7 +204,7 @@ a {
     text-decoration: none;
 }
 
-@media  screen  and  (max-width:959px) {
+@media screen and (max-width:950) {
     .heroSection {
         width: 100%;
     }
@@ -211,12 +214,32 @@ a {
 
 }
 
-@media screen and (max-width:889px) {
+@media screen and (max-width:758px) {
+    .container {
+        width: 100%;
+    }
+    nav {
+        width: 100%;
+    }
+    .heroSection {
+        width: 100%;
+        
+    }
+    .Parallax {
+        width: 100%;
+        background-size: 100%;
+    } 
+    .hero {
+        width: 100%;
+    }
+    
     .other {
         width: 100%;
+        flex-direction: row;
     }
     .other1 {
         width: 100%;
+        flex-direction: column;
     }
     .i4 {
         width: 100%;
@@ -224,5 +247,8 @@ a {
     .article1 {
         width: 100%;
     }
+  .footer {
+      width: 100%;
+  }
 
-}
+} 
